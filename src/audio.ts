@@ -1,3 +1,5 @@
+// SPDX-License-Identifier: AGPL-3.0-or-later
+// Copyright (C) 2026  Sayfullah Eid
 import type { ColorKey } from './types';
 
 // Each color maps to a distinct pitch so cue sounds are identifiable

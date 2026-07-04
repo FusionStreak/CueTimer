@@ -1,3 +1,5 @@
+// SPDX-License-Identifier: AGPL-3.0-or-later
+// Copyright (C) 2026  Sayfullah Eid
 import './style.css';
 import { Timer } from './timer';
 import { DEFAULT_CUES, LEAD_IN, PRE_ROLL } from './constants';

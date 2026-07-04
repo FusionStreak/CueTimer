@@ -1,3 +1,5 @@
+// SPDX-License-Identifier: AGPL-3.0-or-later
+// Copyright (C) 2026  Sayfullah Eid
 import type { Cue } from './types';
 
 const KEY_CUES    = 'ft:cues';

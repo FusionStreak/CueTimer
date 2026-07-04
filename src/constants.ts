@@ -1,3 +1,5 @@
+// SPDX-License-Identifier: AGPL-3.0-or-later
+// Copyright (C) 2026  Sayfullah Eid
 import type { ColorKey, Cue } from './types';
 
 export const COLOR_HEX: Record<ColorKey, string> = {

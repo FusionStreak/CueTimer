@@ -1,3 +1,5 @@
+// SPDX-License-Identifier: AGPL-3.0-or-later
+// Copyright (C) 2026  Sayfullah Eid
 import { defineConfig } from 'vite';
 import { VitePWA } from 'vite-plugin-pwa';
 

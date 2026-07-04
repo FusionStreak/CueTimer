@@ -1,5 +1,7 @@
 # Cue Timer
 
+[![License: AGPL v3](https://img.shields.io/badge/License-AGPL%20v3-blue.svg)](https://www.gnu.org/licenses/agpl-3.0)
+
 A browser-based countdown timer for tracking named cues during film and theatre production. No server required — runs entirely client-side.
 
 **Live:** <https://sayfullaheid.me/CueTimer/>
@@ -57,3 +59,9 @@ Click **✏️** in the header (or press `E`) to open the cue editor. Fields:
 - **Color** — one of: `green`, `yellow`, `orange`, `blue`, `red`
 
 Drag rows to reorder. Cues are sorted by time when the editor closes.
+
+## License
+
+Copyright (C) 2026  Sayfullah Eid
+
+This program is free software: you can redistribute it and/or modify it under the terms of the [GNU Affero General Public License](LICENSE) as published by the Free Software Foundation, either version 3 of the License, or (at your option) any later version.
