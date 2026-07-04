@@ -2,7 +2,7 @@
 
 A browser-based countdown timer for tracking named cues during film and theatre production. No server required — runs entirely client-side.
 
-**Live:** https://[your-username].github.io/FilmTimer/
+**Live:** <https://sayfullaheid.me/CueTimer/>
 
 ## Features
 
@@ -31,7 +31,7 @@ pnpm install
 pnpm dev
 ```
 
-Open http://localhost:5173 in your browser.
+Open <http://localhost:5173> in your browser.
 
 ## Build
 
@@ -57,4 +57,3 @@ Click **✏️** in the header (or press `E`) to open the cue editor. Fields:
 - **Color** — one of: `green`, `yellow`, `orange`, `blue`, `red`
 
 Drag rows to reorder. Cues are sorted by time when the editor closes.
-
