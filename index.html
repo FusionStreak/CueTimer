@@ -1,0 +1,97 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Cue Timer</title>
+  </head>
+  <body>
+    <!-- ── Main stage ──────────────────────────────────────────────────── -->
+    <div class="stage">
+      <header class="head">
+        <h1>CUE TIMER</h1>
+        <div class="head-right">
+          <span class="status" id="statusText">READY</span>
+          <button id="muteBtn" class="icon-btn" title="Mute (M)">🔊</button>
+          <button id="copyLinkBtn" class="icon-btn" title="Copy shareable link">
+            🔗
+          </button>
+          <button id="editBtn" class="icon-btn" title="Edit cues (E)">
+            ✏️
+          </button>
+        </div>
+      </header>
+
+      <div class="clockrow">
+        <div class="clockwrap">
+          <div class="clock paused" id="clockDisplay">00:00</div>
+          <div
+            class="preroll-label"
+            id="prerollLabel"
+            style="visibility: hidden"
+          >
+            get ready&hellip;
+          </div>
+        </div>
+        <div class="controls">
+          <button class="primary" id="startBtn">Start</button>
+          <button id="pauseBtn">Pause</button>
+          <button class="warn" id="resetBtn">Reset</button>
+        </div>
+      </div>
+
+      <div class="nownext">
+        <div class="card now" id="nowCard">
+          <div class="eyebrow">Now Acting</div>
+          <div class="who" id="nowWho">—</div>
+          <div class="in" id="nowIn">Press Start to begin</div>
+        </div>
+        <div class="card" id="nextCard">
+          <div class="eyebrow" id="nextEyebrow">Next Up</div>
+          <div class="who" id="nextWho">—</div>
+          <div class="in" id="nextIn">&nbsp;</div>
+        </div>
+      </div>
+
+      <div class="cuelist" id="cueList"></div>
+    </div>
+    <!-- /.stage -->
+
+    <!-- ── Editor panel (slides in from right) ────────────────────────── -->
+    <div class="editor-overlay" id="editorOverlay"></div>
+    <aside class="editor-panel" id="editorPanel" aria-label="Cue editor">
+      <div class="editor-head">
+        <span>Edit Cues</span>
+        <button id="editorCloseBtn" class="icon-btn" title="Close editor">
+          ✕
+        </button>
+      </div>
+      <div class="editor-rows" id="editorRows"></div>
+      <div class="editor-footer">
+        <button id="addCueBtn" class="primary full-width">+ Add Cue</button>
+      </div>
+    </aside>
+
+    <!-- ── Shared-link modal ───────────────────────────────────────────── -->
+    <div
+      class="modal-overlay"
+      id="shareModal"
+      style="display: none"
+      role="dialog"
+      aria-modal="true"
+    >
+      <div class="modal">
+        <div class="modal-title">Load shared cue list?</div>
+        <p class="modal-body">
+          A cue list was found in the URL. Load it, or keep your current cues.
+        </p>
+        <div class="modal-actions">
+          <button id="shareLoadBtn" class="primary">Load cues</button>
+          <button id="shareDismissBtn">Keep current</button>
+        </div>
+      </div>
+    </div>
+
+    <script type="module" src="/src/main.ts"></script>
+  </body>
+</html>
